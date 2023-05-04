@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="form" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d0cedea89.js" crossorigin="anonymous"></script>
+     <script defer src="./script.js"></script>
+
+</head>
+<body class="form">
+   
+ <div class="textlogo" ><a="landingpage.html"><h1>TjInsurance</h1></h1></a></div>
+  
+
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+<!-- Registration Form -->
+
+<div class="header" id="header">
+    <h1 class="header1" id="header1">Registration Form</h1>
+    <p class="header2" id="header2">Please fill out this form with the required information</p>
+</div>
+
+<form action="/" method="POST" id="form">
+    <div class="fullform">
+    
+        <fieldset class="fieldset1" id="fieldset1">
+            <h1 class="formsubheading">User Information</h1>
+        <div class="input-control">
+            <label class="labelname" for="firstname">First Name</label>
+            <input id="firstname" name="firstname" type="text">
+            <div class="error"></div> 
+        </div>
+            <br>
+            <label class="labelname" for="lastname">Last Name</label>
+            <input id="lastname" name="lastname" type="text" input="text" >
+            <br>
+            <label class="labelname" for="email">Email</label>
+            <input id="email" name="email" type="text" input="email" >
+            <br>
+        <div class="input-control">
+            <label class="labelname" for="password">Password</label>
+            <input id="password" name="password" type="password">
+            <div class="error"></div>
+        </div>
+            <br>
+        
+            <br>
+        </fieldset>
+    
+        <fieldset class="fieldset2" id="fieldset2">
+            <label class="labelname" for="gender">Gender
+                <select id="gender" name="gender-input">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="NonBinary">Non-Binary</option>
+                    <option value="Genderqueer">gender-queer</option>
+                    <option value="aqueer">agender</option>
+                </select>
+            </label>
+        </fieldset>
+
+    <Fieldset class="fieldset3" id="fieldset3">
+        <label class="labelname" for="DOB">Date of Birth<input type="date" id="DOB" value="" name="DOB"></label>
+    </Fieldset>
+
+        <fieldset class="fieldset4" id="fieldset4">
+            <h1 class="formsubheading">Address and Telephone Number</h1>
+            <label class="labelname" for="street">Street Adress<input type="text"  id="street" name="street" input="text" ></label>
+            <label class="labelname" for="city">city<input id="city" type="text"  name="city" input="text" ></label>
+            <label class="labelname" for="Province">Province<br>
+                <select id="Province" name="location-input">
+                    <option value="Ontario">ON</option>
+                    <option value="Quebec">QC</option>
+                    <option value="Alberta">AB</option>
+                    <option value="Saskatchewan">SK</option>
+                    <option value="Newfoundland">NF</option>
+                    <option value="NewBrunswick">NB</option>
+                    <option value="Manitoba">MB</option>
+                    <option value="BritishColumbia">BC</option>
+                    <option value="Yukon">YK</option>
+                    <option value="NorthWestTerritories">NWT</option>
+                    <option value="Nunavut">NV</option>
+                    <option value="NovaScotia">NS</option>
+                    <option value="PrinceEdwardIsland">PEI</option>
+                </select>
+            </label> 
+            <br>
+            <label class="labelname" for="postalcode">Postal Code<input type="text" id="postalcode" name="postalcode"  input="text" ></label>
+            <label class="labelname" for="phonenumber">phone number<input type="tel" id="phonenumber" name="phonenumber" input="text" ></label>
+        </fieldset>
+        
+        <button class="submitbtn1" id="submitbtn1" type="submit">submit</button>
+     
+    </div>
+ 
+    
+    
+</form>
+    
+</body>
+</html>

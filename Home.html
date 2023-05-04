@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/6d0cedea89.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body  class="form">
+   
+    <div class="textlogo" ><a="landingpage.html"><h1>TjInsurance</h1></h1></a></div>
+  
+
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="PRoduct.html">Products</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    </div>
+   
+    <div class="header" id="header">
+    <h1 class="header1" id="header1">Home Insurance Quote</h1>
+    <p class="header2" id="header2">Please fill out this form with the required information</p>
+</div>
+
+<!----- HOUSE PRICE --->
+    <div class="fullform">
+        <form action="" method="POST" class="form1" id="form1">
+            <div class="homept1" id="homept1">
+
+                <fieldset class="fieldset5" id="fieldset5">
+                    <h3 class="formsubheading">Personal Information</h3>
+                <label class="labelname" for="salary">Annual Salary</label><br><input id="salary" name="salary" input="number" inputmode="numeric" ><br>
+                <label class="labelname" for="gender">Sex</label><br>
+                <input id="gender" type="radio" name="genderOption" value="Male" checked><label class="labelname" for="gender">Male</label><br>
+                <input id="gender" type="radio" name="genderOption"  value="Female"><label class="labelname" for="gender">Female</label><br>
+            </fieldset>
+                
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading">Property information</h3>
+   
+        <label class="labelname" for="houseprice">House Price:</label><input type="text" id="houseprice" value="" required><br>
+    
+  
+        <label  class="labelname" for="pdate">Purchase Date:</label><input type="date" id="pdate" value="" required>
+  
+        <!----- building features --->
+       
+    </fieldset>
+</div>
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading">Building Features</h3>
+       
+        <label class="labelname" for="YOC">Year of construction:</label><input type="text" id="YOC" value="" required><br>
+        <label class="labelname" for="TOP">Type of house:</label><br>
+        
+        <div class="main-container">
+            <div class="radio-buttons">
+                <label class="custom-radio"> 
+                <input type="radio" value="Single-Family" name="Typeofproperty" >
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>Single Family Home</h3>
+                </div>
+                </span>
+            </label>
+        
+            <label class="custom-radio">
+                
+                <input type="radio" value="Single-Family" name="Typeofproperty">
+
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>Duplex or Triplex</h3>
+                </div>
+                </span>
+            </label>
+        
+            </div>
+                </div>
+        <br>
+    </fieldset>
+
+
+     <!----- NUMBER OF FLOORS --->
+        <fieldset class="fieldset5" id="fieldset5">
+
+<div class="main-container">
+    <label class="labelname">Number of Floors:</label>
+    <div class="radio-buttons">
+        <label class="custom-radio">
+        
+        <input type="radio" value="Single-Family" name="radio" >
+        
+        <span class="radio-btn"><i class="fa-solid fa-check"></i>
+        <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+        <h3>Single Floor</h3>
+        </div>
+        </span>
+    </label>
+
+    <label class="custom-radio">
+        
+        <input type="radio" value="Single-Family" name="radio">
+        
+        <span class="radio-btn"><i class="fa-solid fa-check"></i>
+        <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+        <h3>2 Floors</h3>
+        </div>
+        </span>
+    </label>
+
+
+    <label class="custom-radio" >
+        
+        <input type="radio" value="Single-Family" name="radio" >
+        
+        <span class="radio-btn"><i class="fa-solid fa-check"></i>
+        <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+        <h3>3 Floors</h3>
+        </div>
+        </span>
+    </label>
+
+
+    <label class="custom-radio" >
+        
+        <input type="radio" value="Single-Family" name="radio" >
+        
+        <span class="radio-btn"><i class="fa-solid fa-check"></i>
+        <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+        <h3>Split level</h3>
+        </div>
+        </span>
+    </label>
+
+    </div>
+        </div>
+    </fieldset>
+
+        <!----- type of house --->
+        <fieldset class="fieldset5" id="fieldset5">
+        <div class="main-container">
+            <label class="labelname">Unit Type:</label>
+            <div class="radio-buttons">
+                <label class="custom-radio">
+                
+                <input type="radio" value="Single-Family" name="unittype" >
+                
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>Detached</h3>
+                </div>
+                </span>
+            </label>
+        
+            <label class="custom-radio">
+                
+                <input type="radio" value="Single-Family" name="unittype">
+                
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>Middle Unit</h3>
+                </div>
+                </span>
+            </label>
+        
+        
+            <label class="custom-radio" >
+                
+                <input type="radio" value="Single-Family" name="unittype" >
+                
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>End Unit</h3>
+                </div>
+                </span>
+            </label>
+
+            <label class="custom-radio">
+                
+                <input type="radio" value="Single-Family" name="unittype" >
+                
+                <span class="radio-btn"><i class="fa-solid fa-check"></i>
+                <div class="hobbies-icon"><i class="fa-solid fa-house"></i>
+                <h3>Semi-Detached</h3>
+                </div>
+                </span>
+            </label>
+        
+        
+            </div>
+                </div>
+            </fieldset>
+
+                  <!----- --->
+
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading" >Ground floor surface area</h3>
+        <label class="labelname" for="surfacearea">Floor surface area:</label><input type="text" id="surfacearea" value="" required>
+    </fieldset>
+
+
+</div>
+    
+</body>
+</html>
+
+

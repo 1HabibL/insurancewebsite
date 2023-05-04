@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/6d0cedea89.js" crossorigin="anonymous"></script>
+    <script defer src="./car.js"></script>
+    <title>Document</title>
+</head>
+<body  class="form">
+   
+    <div class="textlogo" ><a="landingpage.html"><h1>TjInsurance</h1></h1></a></div>
+  
+
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    </div>
+   
+    <div class="header" id="header">
+    <h1 class="header1" id="header1">Car Insurance Quote</h1>
+    <p class="header2" id="header2">Please fill out this form with the required information</p>
+</div>
+    <div class="fullform">
+        <form  method="POST" class="form1" id="form1" onsubmit="">
+            <fieldset class="fieldset5" id="fieldset5">
+                <h3 class="formsubheading">Personal Information</h3>
+            <label class="labelname" for="salary">Annual Salary</label><br><input id="salary" name="salary" input="number" inputmode="numeric" ><br>
+            <label class="labelname" for="gender">Sex</label><br>
+            <input id="gender" type="radio" name="genderOption" value="Male" checked><label class="labelname" for="gender">Male</label><br>
+            <input id="gender" type="radio" name="genderOption"  value="Female"><label class="labelname" for="gender">Female</label><br>
+        </fieldset>
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading">Driving Record</h3>
+        <label class="labelname" for="YOE">Years of Driving Experience</label><br><input name="YOE" id="YOE" input="number" inputmode="numeric" ><br>
+        <label class="labelname" for="NOV">Number of driving violations</label><br><input id="NOV" name="NOV" input="number" inputmode="numeric" ><br>
+        <label class="labelname" for="IRecord">Did you have insurance before</label><br>
+            <input id="IRecord" type="radio" name="InsuranceHistoryOption" value="yes" checked/><label class="labelname" for="IRecord">Yes</label><br>
+            <input id="IRecord2" type="radio" name="InsuranceHistoryOption"  value="no" /><label class="labelname" for="IRecord">No</label><br>
+    </fieldset>
+
+
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading">Vehicle Information</h3>
+        <label class="labelname"  for="car" onchange="carbrand();">Brand of Car</label><br>
+            <select id="car" name="car" >
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Acura">Acura</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Kia">Kia</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ford">Ford</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Lincoln">Lincoln</option>
+                <option value="Buick">Buick</option>
+                <option value="Cadillac">Cadillac</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Volvo">Volvo</option>
+            </select>
+        <br>
+
+            <label class="labelname" for="carbody">Body Style</label><br>
+                <select id="carbody" name="carbody-input">
+                    <option value="CompactSedan">Compact-Sedan</option>
+                    <option value="MidSizeSedan">Mid-Size-Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Coupe">2-Door Coupe</option>
+                </select>
+                <br>
+                <label class="labelname" for="Myear">Model Year</label><br>
+                <input type="text" id="Myear" value="" name="Myear" ><br>
+                <label class="labelname" for="Kdriven">Kilometers Driven</label><br>
+                <input type="text" id="Kdriven" value="" name="Kdriven" ><br>
+                <label class="labelname" for="carprice">Vehicle Price</label><br>
+                <input type="text" id="carprice" value="" name="carprice" ><br>
+                <label class="labelname" for="pdate">Purchase Date</label><br>
+                <input type="date" id="pdate" name="pdate" value="" >
+            
+    </fieldset>
+
+
+    <fieldset class="fieldset5" id="fieldset5">
+        <h3 class="formsubheading">License Information</h3>
+    <label class="labelname" id="licenselabel" for="license">When Did you get your license?<input type="date" id="license" value="" name="license"></label>
+
+
+    
+
+    </fieldset>
+    <button class="submitbtnd" id="submitbtnd" type="submit" onclick="fun1();return false">submit</button>
+</form>
+</div>
+<section class="productoutput">
+<div class="output" id="result" style="display:none;">
+<p id="output1"></p>
+</div>
+</section> 
+</body>
+</html>
+
+
