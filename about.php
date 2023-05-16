@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/dbh.inc.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,28 +41,72 @@
     </div>
 
 
-    <div class="image">
-        <img src="images/home.svg" alt="" />
+    <div class="image" >
+        <img id="aboutimage" width="750" height="600" src="images/employees.webp" alt="" />
     </div>
 </section>
 </div>
 
 <!-- HERO SECTION2 -->
-<div  class="home-bg2">
-    <section class="home">
-        <div class="content2">
-            <h1>Join Us</h1>
-            <h1>Lets build the future together</h1>
-            <p>Check out for available Positions below!</p>
-            <a href="#" class="btn">Join now</a>
-        </div>
-    
-    
-       
-    </section>
-    </div>
 
+<div class="home-bg2">
+<div class="homeflex">
+    <section>
+        <div id="jobdatabase">
+        <div id="jobdatabasetitle">
+<h1 class="contactheader">Job Postings</h1>
+
+<table class="content-table">
+<thead id="databasehead">
+    <tr>
+        <th>Job</th>
+        <th>Department</th>
+        <th>Experience Level</th>
+        <th>Salary</th> 
+    </tr>
+</thead>
+<div id="jobdatabasetitle">
+
+<tbody>
+    <?php
+
+    if($conn->connect_error) {
+        die("connection failed: ". $conn->connect_error);
+
+    }
+    $sql = "SELECT * FROM jobpostings";
+    $result = $conn->query($sql);
+
+    if (!$result) {
+        die("invalid query: " . $conn->error);
+    }
+
+    while($row = $result->fetch_assoc()) {
+
+        ?>
+        <tr>
+    <td class="datbasetd"><?php echo $row["jobtitle"] ?></td>
+    <td class="datbasetd"><?php echo $row["department"] ?></td>
+    <td class="datbasetd"><?php echo $row["experience"] ?></td>
+    <td class="datbasetd"><?php echo $row["salary"] ?></td> 
+  </tr>
+  <?php
+}
+?>
+
+   
+
+   
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+</div>
     
 
 </body>
 </html>
+    

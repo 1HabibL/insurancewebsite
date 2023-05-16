@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d0cedea89.js" crossorigin="anonymous"></script>
-    <script defer src="./mortgage.js"></script>
+    <script defer src="./carloan.js"></script>
 
-    <title>Mortgage Calculater bt TJInsurance</title>
+    <title>Car Loan Calculater by TJInsurance</title>
 </head>
-<body  class="form">
+<body  class="form5">
    
     <div class="textlogo" ><a="landingpage.html"><h1>TjInsurance</h1></h1></a></div>
   
@@ -20,14 +20,14 @@
         <ul>
             <li><a href="landingpage.html">Home</a></li>
             <li><a href="Product.html">Products</a></li>
-            <li><a href="http://localhost:3000/about.php">About us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
     </div>
    
     <div class="header" id="header">
-    <h1 class="header1" id="header1">Home Insurance Quote</h1>
+    <h1 class="header1" id="header1">Car loan Calculater</h1>
     <p class="header2" id="header2">Please fill out this form with the required information</p>
 </div>
 
@@ -39,41 +39,31 @@
 
                 <fieldset class="fieldset5" id="fieldset5">
                     <h3 class="formsubheading">Payment Plan</h3>
-                <label class="labelname" for="mortgage">Mortgage Amount</label><br><input id="mortgage" name="mortgage" input="number" inputmode="numeric" class="mortgageboxes"><br>
-                <label class="labelname" for="interest">Interest Rate</label><br><input id="interest" name="interest" input="number" inputmode="numeric"  class="mortgageboxes"><br>
+                <label class="labelname" for="carprice">Car price</label><br><input id="carprice" name="carprice" input="number" inputmode="numeric" class="mortgageboxes"><br>
+                <label class="labelname" for="interest">Interest Rate (%)</label><br><input id="interest" name="interest" input="number" inputmode="numeric"  class="mortgageboxes"><br>
               
                 <label class="labelname"  for="ammortization">Ammortization Period</label>
                     <select id="ammortization" name="ammortization" >
-                        <option value="1">1 Year</option>
-                        <option value="2">2 Years</option>
-                        <option value="3">3 Years</option>
-                        <option value="4">4 Years</option>
-                        <option value="5">5 Years</option>
-                        <option value="6">6 Years</option>
-                        <option value="7">7 Years</option>
-                        <option value="8">8 Years</option>
-                        <option value="9">9 Years</option>
-                        <option value="10">10 Years</option>
-                        <option value="11">11 Years</option>
-                        <option value="12">12 Years</option>
-                        <option value="13">13 Years</option>
-                        <option value="14">14 Years</option>
-                        <option value="15">15 Years</option>
-                        <option value="16">16 Years</option>
-                        <option value="17">17 Years</option>
-                        <option value="18">18 Years</option>
-                        <option value="19">19 Years</option>
-                        <option value="20">20 Years</option>
-                        <option value="21">21 Years</option>
-                        <option value="22">22 Years</option>
-                        <option value="23">23 Years</option>
-                        <option value="24">24 Years</option>
-                        <option value="25" selected>25 Years</option>
-                        <option value="26">26 Years</option>
-                        <option value="27">27 Years</option>
-                        <option value="28">28 Years</option>
-                        <option value="29">29 Years</option>
-                        <option value="30">30 Years</option>
+                        <option value="0.5">6 months</option>
+                        <option value="1">12 months</option>
+                        <option value="1.5">18 months</option>
+                        <option value="2" >24 months</option>
+                        <option value="2.5">30 months</option>
+                        <option value="3">36 months</option>
+                        <option value="3.5">42 months</option>
+                        <option value="4" selected>48 months</option>
+                        <option value="4.5">54 months</option>
+                        <option value="5">60 months</option>
+                        <option value="5.5">66 months</option>
+                        <option value="6">72 months</option>
+                        <option value="6.5">78 months</option>
+                        <option value="7">84 months</option>
+                        <option value="7.5">90 Months</option>
+                        <option value="8">96 Months</option>
+                        <option value="8.5">102 Months</option>
+                        <option value="9">108 Months</option>
+                        <option value="9.5">115 Months</option>
+                        <option value="10">121 Months</option>
                     </select>
                        <br>
                        
@@ -95,11 +85,11 @@
                         <label class="radiomortgagelabel" for="monthly">Monthly</label>
                       </div>
                       <div class="radiomortgage">
-                        <input class="radiomortgageinput" type="radio" id="bi-weekly" name="frequency" value="26">
+                        <input class="radiomortgageinput" type="radio" id="bi-weekly" name="frequency" value="26" checked>
                         <label class="radiomortgagelabel" for="bi-weekly">Bi-Weekly</label>
                       </div>
                       <div class="radiomortgage">
-                        <input class="radiomortgageinput" type="radio" id="weekly" name="frequency" value="52" checked>
+                        <input class="radiomortgageinput" type="radio" id="weekly" name="frequency" value="52">
                         <label class="radiomortgagelabel" for="weekly">Weekly</label>
                       </div>
                     </div>
@@ -125,20 +115,11 @@
     <fieldset class="fieldset5" id="fieldset5">
         <h3 class="formsubheading">Prepayment Plan</h3>
    
-        <label class="labelname" for="prepayment">Prepayment Amount</label><br><input id="prepayment" name="prepayment" input="number" inputmode="numeric"  class="mortgageboxes"><br>    
-  
-        <label class="labelname" for="Prfrequency">Prepayment Frequency</label><br> 
-        <select id="Prfrequency" name="Prfrequency">
-            <option value="OneTime">One Time</option>
-            <option value="EachYear">Each Year</option>
-            <option value="Same">Same as Regular Payment</option>
-        </select><br>
-            <label class="labelname" for="Start">Start Payment With:</label>
-            <br><input id="Start" name="Start" input="number" inputmode="numeric" class="mortgageboxes"><br>
-    
+        <label class="labelname" for="prepayment">Prepayment Amount</label><br><input id="prepayment" name="prepayment" input="number" inputmode="numeric"  class="mortgageboxes"><br>
+        <label class="labelname" for="tradein">Trade-in Vehicle Price</label><br><input id="tradein" name="tradein" input="number" inputmode="numeric"  class="mortgageboxes"><br>    
         
     </fieldset>
-    <button class="submitbtnd" id="submitbtnd" type="submit" value="Calculate">submit</button>
+    <button class="submitbtnd" id="submitbtnd" type="submit">submit</button>
 </form>
     </div>
 

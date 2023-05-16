@@ -105,6 +105,11 @@ color: black;
     flex: 1 1 42rem;
 }
 
+#aboutimage {
+    border-radius: 6px;
+    margin-top: 40px;
+}
+
 section {
     padding: 3rem 2rem;
     max-width: 1750px;
@@ -301,6 +306,8 @@ padding-bottom: 30px;
     background-attachment: fixed;
     background-position: center;
 }
+
+
     
     
 
@@ -308,10 +315,11 @@ padding-bottom: 30px;
 .fullform {
     background-color: white;
     max-width: 900px;
-    
+    height: 645px;
     margin: auto;
     border-radius: 5px;
     box-shadow: -10px 10px 13px;
+    
 
 }
 
@@ -384,19 +392,17 @@ display: inline-block;
     
 }
 
-.submitbtn1 {
-   color: black;
-   text-align: center;
-   margin-top: 20px;
-   display: inline-block;
-   padding: 10px 30px;
-   border-radius: 5px;
-   position: absolute;
-   margin-left: 190px;
-
-}
-
-.submitbtnd{
+.submitbtn1{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin space at the bottom */
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+ }
+ .submitbtnd{
     display: flex;
     margin: auto;
     padding: 10px 20px;
@@ -508,6 +514,10 @@ text-align: center;}
 #YOE
 {box-shadow: 2.8px 3.3px 4px;}
 
+#salary
+{box-shadow: 2.8px 3.3px 4px;}
+
+
 #NOV
 {box-shadow: 2.8px 3.3px 4px;}
 
@@ -518,6 +528,9 @@ text-align: center;}
 #licenselabel{
     width: 250px;
 }
+
+#car
+{border: solid 2px;}
 
 /* !--------------------------------------------------car insurance------------------------------------------------*/
 
@@ -702,21 +715,7 @@ transform: translateX(-50%) scale(1);
 
 }
 
-.output{
 
-    align-items: center;
-    margin: auto;
-    display: inline-block;
-    padding: 30px 30px;
-    border-style: outset;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    
-}
 
 #result {
     font-size: 25px;
@@ -800,3 +799,52 @@ transform: translateX(-50%) scale(1);
 
 
   /* !--------------------------------------------------Mortgage Calculater------------------------------------------------*/
+
+    /* !--------------------------------------------------Job Database------------------------------------------------*/
+    .homeflex {
+        display: flex;
+
+    }
+
+    #databasehead {
+        text-align: left;
+    }
+    
+    .content-table {
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 25px;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .content-table thead tr{
+        background-color: #0496ff;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th, .content-table td {
+        padding: 18px 73px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #0496ff;
+    }
+
+
+   
+ 
+
+     /* !--------------------------------------------------Job Database------------------------------------------------*/
