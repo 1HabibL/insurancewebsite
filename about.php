@@ -15,7 +15,7 @@ include_once 'includes/dbh.inc.php';
 
 </head>
 <body>
- <div class="textlogo" ><a href="landingpage.html""><h1>TJInsurance</h1></a></div>
+<div class="textlogo" ><a href="landingpage.html"><h1><img width="70px" height="70px" src="images/logo.png"></h1></h1></a></div>
   
    
     <div class="navbar">
